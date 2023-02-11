@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="battleships.css">
+    </head>
+
+    <body>
+        <div id="top">
+            <h1 class="title">Battleships</h1>
+        </div>
+
+        <div id="bottom">
+            <div id="left">
+                <div id="ships-table">
+                    <div class="arrow-div">
+                        <button class="arrow" onclick="nextShipList()"><-</button>
+                        <button class="arrow" onclick="previousShipList()">-></button>
+
+                    </div>
+
+                    <ol class="text-small" id="ship-list">
+                        
+                    </ol>
+                </div>
+            </div>
+
+            <div id="center">
+                <div id="table">
+                    <div id="markers-horizontal"></div>
+    
+                    <div id="markers-vertical">
+                        <div id="letters"></div>
+                        <div id="grid"></div>
+                        
+                    </div>
+    
+                </div>
+                
+                <button id="shoot-btn">Shoot</button>
+            </div>
+
+            <div id="right">
+            </div>
+        </div>
+        <script type="module" src="Battleships.js"></script>
+    </body>
+</html>

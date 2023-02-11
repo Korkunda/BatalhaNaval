@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'seagram';
+    src: url('Fonts/seagram_tfb-webfont.woff2') format('woff2'),
+         url('Fonts/seagram_tfb-webfont.woff') format('woff');
+
+}
+
+body {
+    font-family: "seagram";
+    background-color: rgb(35, 39, 54);
+    color:white;
+    --fontsize-title: 60px;
+    --fontsize: 35px;
+}
+
+.title{
+    text-align: center;
+    font-size: var(--fontsize-title);
+}
+
+.text{
+    text-align: center;
+    font-size: var(--fontsize);
+}
+
+.text-small{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*BUTTONS*/
+button {
+    font-family: "seagram";
+    height: 50px;
+    width: 200px;
+
+    font-size: 40px;
+
+    background-color: rgb(109, 109, 109);
+    color: white;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+button:active{
+    scale: 0.95;
+}
+
+.arrow-div{
+    background-color: rgb(109, 109, 109);
+    color: white;
+    font-size: 40px;
+    /*put the arrow in the middle*/
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.arrow{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(109, 109, 109);
+    color: white;
+    font-size: 40px;
+    /*put the arrow in the middle*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        
+    align-items: center;
+  /*make text fit in the button*/
+ 
+}
+
+.arrow:active{
+    background-color: rgb(0, 174, 255);
+}
+
+#top{
+    margin: 0;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+}
+
+#bottom{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+
+}
+
+/*LEFT SIDE*/
+#left{
+    width: 30vw;
+    justify-self: flex-start;
+}
+
+#ships-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*make items in the center of the div*/
+
+}
+
+#ship-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ship{
+    background-color: rgb(109, 109, 109);
+    margin: 0;
+
+}
+
+.ship-selected{
+    background-color: rgb(0, 174, 255);
+    margin: 0;
+}
+
+/*RIGHT SIDE*/
+#center{
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+    /* position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px; Need a specific value to work */
+}
+
+#right{
+    width: 30vw;
+    justify-self: flex-start;
+}
+
+/*BATTLESHIPS-GAMETABLE*/
+#table{
+    margin: 0;
+    align-self: center;
+
+}
+
+#markers-horizontal{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    
+}
+
+#markers-vertical{
+    display: flex;
+    flex-direction: row;
+}
+
+#marker{
+    margin: 0;
+}
+
+#div-grid{
+    display: flex;
+    flex-direction: row;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    margin-bottom: 25px;
+}
+
+/* SQUARE */
+.table-corner{
+    height: 50px;
+    width: 50px;
+    color:transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.number{
+    height: 50px;
+    width: 50px;
+    color:white;
+    background-color: transparent;
+    border: none;
+}
+
+#div-letters{
+    display: flex;
+    flex-direction: column;
+}
+
+.letter{
+    height: 50px;
+    width: 50px;
+    color:white;
+    background-color: transparent;
+    border: none;
+}
+
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(109, 109, 109);
+}
+
+.square-selected{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 174, 255);
+}
+
+.square-hit{
+    height: 50px;
+    width: 50px;
+    background-color: yellowgreen;
+}
+
+.square-miss{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.square:hover{
+    background-color: rgb(0, 174, 255);
+}
+
+#shoot-btn{
+    align-self: center;
+}
+
